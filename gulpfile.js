@@ -9,4 +9,6 @@ gulp.task('copy', function() {
     .pipe(gulp.dest('./dist/js/'));
   gulp.src('./node_modules/bootstrap/dist/js/bootstrap.min.js')
     .pipe(gulp.dest('./dist/js/'));
+  gulp.src('./node_modules/fontawesome/index.js')
+    .pipe(gulp.dest('./dist/js/'));
 });
