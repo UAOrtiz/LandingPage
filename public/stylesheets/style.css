@@ -1,8 +1,59 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
 }
+
+/* Start "Start Section Styles" */
+
+.masthead {
+  padding: 200px 0 100px;
+  background-color: #1abc9c;
+}
+
+.masthead-avata {
+  width: 240px;
+}
+
+.masthead-heading {
+  font-size: 4rem;
+  line-height: 3.5rem;
+  font-weight: 700;
+}
+
+.divider-custom {
+  margin: 1.25rem 0 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divider-custom-line {
+  width: 112px;
+  height: 4px;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.left-line {
+  margin-right: 16px;
+}
+
+.right-line {
+  margin-left: 16px;
+}
+
+.fa-star {
+  font-size: 32px;
+}
+
+.masthead-subheading{
+  font-size: 1.5rem;
+}
+
+/* End "Start Section Styles" */
+
+

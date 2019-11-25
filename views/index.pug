@@ -2,20 +2,25 @@
 extends layout
 block content
   // Masthead
-  header.masthead.bg-primary.text-white.text-center
+  //- Start "Start Section"
+  header.masthead.text-white.text-center
     .container.d-flex.align-items-center.flex-column
-      // Masthead Avatar Image
-      img.masthead-avatar.mb-5(src='img/avataaars.svg' alt='')
-      // Masthead Heading
+      //- Masthead Avatar Image
+      img.masthead-avatar.mb-5(
+        class="masthead-avata"
+        src='https://blackrockdigital.github.io/startbootstrap-freelancer/img/avataaars.svg'
+        alt=''
+      )
+      //- Masthead Heading
       h1.masthead-heading.text-uppercase.mb-0 Start Bootstrap
-      // Icon Divider
+      //- Icon Divider
       .divider-custom.divider-light
-        .divider-custom-line
-        .divider-custom-icon
-          i.fas.fa-star
-        .divider-custom-line
-      // Masthead Subheading
-      p.masthead-subheading.font-weight-light.mb-0 Graphic Artist - Web Designer - Illustrator
+        .divider-custom-line.left-line
+        i.fas.fa-star
+        .divider-custom-line.right-line
+      //- Masthead Subheading
+      p.masthead-subheading.font-weight-normal.mb-0 Graphic Artist - Web Designer - Illustrator
+  //- End "Start Section"
   //Portfolio Section
   section#portfolio.page-section.portfolio
   .container
