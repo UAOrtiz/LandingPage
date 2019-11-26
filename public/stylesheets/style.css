@@ -66,6 +66,29 @@ background-color: #30BC9C;
   }
 }
 
+/*Navbar styles*/
+
+/*footer*/
+.footer {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #2c3e50;
+  color: #fff;
+}
+a.btn-social{
+  border-radius: 100%;
+  border-width: medium;
+  width: 3rem;
+  height: 3rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+#socialM {
+margin-bottom: 3rem;
+}
+/*footer*/
+
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
