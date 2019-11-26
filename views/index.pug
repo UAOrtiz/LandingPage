@@ -15,9 +15,10 @@ block content
       h1.masthead-heading.text-uppercase.mb-0 Start Bootstrap
       //- Icon Divider
       .divider-custom.divider-light
-        .divider-custom-line.left-line
-        i.fas.fa-star
-        .divider-custom-line.right-line
+        .divider-custom-line.back-light.left-line
+        .divider-custom-icon
+          i.fas.fa-star.color-light
+        .divider-custom-line.back-light.right-line
       //- Masthead Subheading
       p.masthead-subheading.font-weight-normal.mb-0 Graphic Artist - Web Designer - Illustrator
   //- End "Start Section"
@@ -100,72 +101,106 @@ block content
         a.btn.btn-xl.btn-outline-light(href='https://startbootstrap.com/themes/freelancer/')
           i.fas.fa-download.mr-2
           |           Free Download!
-  // Contact Section
+  //- Start Contact Section
   section#contact.page-section
     .container
-      // Contact Section Heading
-      h2.page-section-heading.text-center.text-uppercase.text-secondary.mb-0 Contact Me
-      // Icon Divider
+      //- Contact Section Heading
+      h2.page-section-heading.text-center.text-uppercase.color-dark.mb-0 Contact Me
+      //- Icon Divider
       .divider-custom
-        .divider-custom-line
-        .divider-custom-icon
+        .divider-custom-line.back-dark.left-line
+        .divider-custom-icon.color-dark
           i.fas.fa-star
-        .divider-custom-line
-      // Contact Section Form
+        .divider-custom-line.back-dark.right-line
+      //- Contact Section Form
       .row
         .col-lg-8.mx-auto
-          // To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19.
-          form#contactForm(name='sentMessage' novalidate='novalidate')
-            .control-group
+          //- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19.
+          form#contactForm.error(name='sentMessage', novalidate='novalidate', onsubmit="return validateForm()")
+            .control-group.error
               .form-group.floating-label-form-group.controls.mb-0.pb-2
-                label Name
-                input#name.form-control(type='text' placeholder='Name' required='required' data-validation-required-message='Please enter your name.')
-                p.help-block.text-danger
-            .control-group
+                input#name.form-ctrl(
+                  type='text',
+                  placeholder="Name",
+                  required='required',
+                  data-validation-required-message='Please enter your name.'
+                  onkeyup="validateInput('name')"
+                )
+                label.form-control-placeholder(onclick="focusInput('name')") Name
+                p.help-block
+                  ul(role='alert')
+                    li#nameError.text-danger Please enter your name.
+            .control-group.error
               .form-group.floating-label-form-group.controls.mb-0.pb-2
-                label Email Address
-                input#email.form-control(type='email' placeholder='Email Address' required='required' data-validation-required-message='Please enter your email address.')
-                p.help-block.text-danger
-            .control-group
+                input#email.form-ctrl(
+                  type='email',
+                  placeholder="Email Address",
+                  required='required',
+                  data-validation-required-message='Please enter your email address.'
+                  onkeyup="validateInput('email')"
+                )
+                label.form-control-placeholder(onclick="focusInput('email')") Email Address
+                p.help-block
+                  ul(role='alert')
+                    li#emailError.text-danger Please enter your email address.
+            .control-group.error
               .form-group.floating-label-form-group.controls.mb-0.pb-2
-                label Phone Number
-                input#phone.form-control(type='tel' placeholder='Phone Number' required='required' data-validation-required-message='Please enter your phone number.')
-                p.help-block.text-danger
-            .control-group
+                input#phone.form-ctrl(
+                  type='tel',
+                  placeholder="Phone Number",
+                  required='required',
+                  data-validation-required-message='Please enter your phone number.'
+                  onkeyup="validateInput('phone')"
+                )
+                label.form-control-placeholder(onclick="focusInput('phone')") Phone Number
+                p.help-block
+                  ul(role='alert')
+                    li#phoneError.text-danger Please enter your phone number.
+            .control-group.error
               .form-group.floating-label-form-group.controls.mb-0.pb-2
-                label Message
-                textarea#message.form-control(rows='5' placeholder='Message' required='required' data-validation-required-message='Please enter a message.')
-                p.help-block.text-danger
+                textarea#message.form-ctrl(
+                  rows='5',
+                  placeholder="Message",
+                  required='required',
+                  data-validation-required-message='Please enter a message.'
+                  onkeyup="validateInput('message')"
+                )
+                label.form-control-placeholder(onclick="focusInput('message')") Message
+                p.help-block
+                  ul(role='alert')
+                    li#messageError.text-danger Please enter a message.
             br
             #success
             .form-group
-              button#sendMessageButton.btn.btn-primary.btn-xl(type='submit') Send
-    //Footer
-    footer.footer.text-center
-      .container
-        .row
-          //footer location
-          .col-lg-4.mb-5.mb-lg-0
-            h4.text-uppercase.mb-4 Location
-            p.lead.mb-0
-              | 2215 Mexico Drive
-              br
-              | Tpc, Nay 63000
-          //footer social Icons
-          .col-lg-4.mb-5-mb-lg-0
-            h4.text-uppercase.mb-4 Around the Web
-            a.btn.btn-outline-light.btn-social.mx-1(href='#')
-              i.fab.fa-fw.fa-facebook-f
-            a.btn.btn-outline-light.btn-social.mx-1(href='#')
-              i.fab.fa-fw.fa-twitter
-            a.btn.btn-outline-light.btn-social.mx-1(href='#')
-              i.fab.fa-fw.fa-linkedin-in
-            a.btn.btn-outline-light.btn-social.mx-1(href='#')
-              i.fab.fa-fw.fa-dribbble
-          // Footer About Text
-          .col-lg-4
-            h4.text-uppercase.mb-4 About Freelancer
-            p.lead.mb-0
-              | Freelance is a free to use, MIT licensed Bootstrap theme created by
-              a(href='http://startbootstrap.com') Start Bootstrap
-              | .  
+              button#sendMessageButton.btn.btn-xl(type="submit") Send
+  //- End Contact Section
+  //Footer
+  footer.footer.text-center
+    .container
+      .row
+        //footer location
+        .col-lg-4.mb-5.mb-lg-0
+          h4.text-uppercase.mb-4 Location
+          p.lead.mb-0
+            | 2215 Mexico Drive
+            br
+            | Tpc, Nay 63000
+        //footer social Icons
+        .col-lg-4.mb-5-mb-lg-0
+          h4.text-uppercase.mb-4 Around the Web
+          a.btn.btn-outline-light.btn-social.mx-1(href='#')
+            i.fab.fa-fw.fa-facebook-f
+          a.btn.btn-outline-light.btn-social.mx-1(href='#')
+            i.fab.fa-fw.fa-twitter
+          a.btn.btn-outline-light.btn-social.mx-1(href='#')
+            i.fab.fa-fw.fa-linkedin-in
+          a.btn.btn-outline-light.btn-social.mx-1(href='#')
+            i.fab.fa-fw.fa-dribbble
+        // Footer About Text
+        .col-lg-4
+          h4.text-uppercase.mb-4 About Freelancer
+          p.lead.mb-0
+            | Freelance is a free to use, MIT licensed Bootstrap theme created by
+            a(href='http://startbootstrap.com') Start Bootstrap
+            | .
+  

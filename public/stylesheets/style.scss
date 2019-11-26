@@ -1,3 +1,5 @@
+// Global styles
+
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
@@ -5,6 +7,8 @@ body {
 a {
   color: #00B7FF;
 }
+
+// Start section styles
 
 .masthead {
   padding: 200px 0 100px;
@@ -24,15 +28,9 @@ a {
 .divider-custom {
   margin: 1.25rem 0 1.5rem;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .divider-custom-line {
@@ -53,7 +51,7 @@ a {
   font-size: 32px;
 }
 
-.masthead-subheading {
+.masthead-subheading{
   font-size: 1.5rem;
 }
 
@@ -62,10 +60,14 @@ a {
     font-size: 4rem;
     line-height: 3.5rem;
   }
-  .masthead-subheading {
+
+  .masthead-subheading{
     font-size: 1.25rem;
   }
-}
+
+} 
+
+// Contact section styles
 
 #contact {
   padding: 96px 0;
@@ -99,24 +101,27 @@ a {
 
 @media (min-width: 576px) {
   .container {
-    max-width: 540px;
+      max-width: 540px;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px){
   .container {
-    max-width: 720px;
+      max-width: 720px;
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 992px){
+
   .container {
-    max-width: 960px;
+      max-width: 960px;
   }
+
   .page-section-heading {
     font-size: 4rem;
     line-height: 3.5rem;
   }
+
 }
 
 .control-group {
@@ -150,7 +155,6 @@ a {
   position: absolute;
   top: 0;
   padding: 7px 0 0 13px;
-  -webkit-transition: all 200ms;
   transition: all 200ms;
   opacity: 0;
 }
@@ -159,14 +163,16 @@ a {
   outline: none;
 }
 
+// .form-ctrl:focus + .form-control-placeholder,
 .form-ctrl:valid + .form-control-placeholder,
 .form-ctrl:not(:placeholder-shown) + .form-control-placeholder {
   font-size: 1rem;
-  -webkit-transform: translate3d(0, -110%, 0);
-          transform: translate3d(0, -110%, 0);
+  transform: translate3d(0, -110%, 0);
   opacity: 1;
   color: #1abc9c;
 }
+
+// Animations
 
 .animated {
   -webkit-animation-duration: 1s;
@@ -186,6 +192,7 @@ a {
     -webkit-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0);
   }
+
   to {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
@@ -199,6 +206,7 @@ a {
     -webkit-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0);
   }
+
   to {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
@@ -215,6 +223,7 @@ a {
   from {
     opacity: 1;
   }
+
   to {
     opacity: 0;
     -webkit-transform: translate3d(0, 100%, 0);
@@ -226,6 +235,7 @@ a {
   from {
     opacity: 1;
   }
+
   to {
     opacity: 0;
     -webkit-transform: translate3d(0, 100%, 0);
@@ -237,4 +247,6 @@ a {
   -webkit-animation-name: fadeOutDown;
   animation-name: fadeOutDown;
 }
-/*# sourceMappingURL=style.css.map */
+
+
+
