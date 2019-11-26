@@ -2,18 +2,20 @@ doctype html
 html
   head
     title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
     meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
     meta(charset='utf-8')
-    title= title
+    link(rel='stylesheet', href='/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css')
+
     
   body
 
     block content
-    nav#mainNav.navbar.navbar-expand-lg.bg-secondary.text-uppercase.fixed-top
+    nav#mainNav.navbar.navbar-expand-lg.text-uppercase.fixed-top
       .container
         a.navbar-brand.js-scroll-trigger(href='#page-top') Start Bootstrap
-        button.navbar-toggler.navbar-toggler-right.text-uppercase.font-weight-bold.bg-primary.text-white.rounded(type='button' data-toggle='collapse' data-target='#navbarResponsive' aria-controls='navbarResponsive' aria-expanded='false' aria-label='Toggle navigation')
+        button.navbar-toggler.navbar-toggler-right.text-uppercase.font-weight-bold.text-white.rounded(type='button' data-toggle='collapse' data-target='#navbarResponsive' aria-controls='navbarResponsive' aria-expanded='false' aria-label='Toggle navigation')
           | Menu
           i.fas.fa-bars
         #navbarResponsive.collapse.navbar-collapse
@@ -34,6 +36,5 @@ html
     script(src='/js/jquery.min.js')
     script(src='/js/bootstrap.min.js')
     script(src='/javascripts/scripts.js')
-    link(rel='stylesheet', href='/css/bootstrap.min.css')
-    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css')
+    
     
