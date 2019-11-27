@@ -22,65 +22,60 @@ block content
       //- Masthead Subheading
       p.masthead-subheading.font-weight-normal.mb-0 Graphic Artist - Web Designer - Illustrator
   //- End "Start Section"
-  //^scroll to top
-  .scroll-to-top.d-lg-none.position-fixed
-    a.js-scroll-trigger.d-block.text-center.text-white.rounded(href='#page-top')
-      i.fa.fa-chevron-up
-  //Portfolio Section
-  section#portfolio.page-section.portfolio
-  .container
-    // Portfolio Section Heading
-    h2.page-section-heading.text-center.text-uppercase.text-secondary.mb-0 Portfolio
-    // Icon Divider
-    .divider-custom
-      .divider-custom-line
-      .divider-custom-icon
+  section(id="portfolio", class="container py-5 my-5") 
+      h1(class="text-secondary text-center") Portafolio
+
+      //- Divider
+      .divider-custom.divider-light
+        .divider-custom-line.left-line
         i.fas.fa-star
-      .divider-custom-line
-    // Portfolio Grid Items
-    .row
-      // Portfolio Item 1
-      .col-md-6.col-lg-4
-        .portfolio-item.mx-auto(data-toggle='modal' data-target='#portfolioModal1')
-          .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
-            .portfolio-item-caption-content.text-center.text-white
-              i.fas.fa-plus.fa-3x
-          img.img-fluid(src='img/portfolio/cabin.png' alt='')
-      // Portfolio Item 2
-      .col-md-6.col-lg-4
-        .portfolio-item.mx-auto(data-toggle='modal' data-target='#portfolioModal2')
-          .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
-            .portfolio-item-caption-content.text-center.text-white
-              i.fas.fa-plus.fa-3x
-          img.img-fluid(src='img/portfolio/cake.png' alt='')
-      // Portfolio Item 3
-      .col-md-6.col-lg-4
-        .portfolio-item.mx-auto(data-toggle='modal' data-target='#portfolioModal3')
-          .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
-            .portfolio-item-caption-content.text-center.text-white
-              i.fas.fa-plus.fa-3x
-          img.img-fluid(src='img/portfolio/circus.png' alt='')
-      // Portfolio Item 4
-      .col-md-6.col-lg-4
-        .portfolio-item.mx-auto(data-toggle='modal' data-target='#portfolioModal4')
-          .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
-            .portfolio-item-caption-content.text-center.text-white
-              i.fas.fa-plus.fa-3x
-          img.img-fluid(src='img/portfolio/game.png' alt='')
-      // Portfolio Item 5
-      .col-md-6.col-lg-4
-        .portfolio-item.mx-auto(data-toggle='modal' data-target='#portfolioModal5')
-          .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
-            .portfolio-item-caption-content.text-center.text-white
-              i.fas.fa-plus.fa-3x
-          img.img-fluid(src='img/portfolio/safe.png' alt='')
-      // Portfolio Item 6
-      .col-md-6.col-lg-4
-        .portfolio-item.mx-auto(data-toggle='modal' data-target='#portfolioModal6')
-          .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
-            .portfolio-item-caption-content.text-center.text-white
-              i.fas.fa-plus.fa-3x
-          img.img-fluid(src='img/portfolio/submarine.png' alt='')
+        .divider-custom-line.right-line
+
+  div.row
+    // Portfolio Item 1
+    div.col-md-6.col-lg-4
+      .portfolio-item.mx-auto(data-toggle='modal' data-target='#portfolioModal1')
+        div.portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+          div.portfolio-item-caption-content.text-center.text-white.portafolio
+            i.fas.fa-plus.fa-3x
+        img.img-fluid.rounded(src='https://blackrockdigital.github.io/startbootstrap-freelancer/img/portfolio/cabin.png' alt='')
+
+    // Portfolio Item 2
+    div.col-md-6.col-lg-4
+      div.portfolio-item.mx-auto(data-toggle='modal' data-target='#portfolioModal2')
+        div.portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+          div.portfolio-item-caption-content.text-center.text-white
+            i.fas.fa-plus.fa-3x
+        img.img-fluid.rounded(src='https://blackrockdigital.github.io/startbootstrap-freelancer/img/portfolio/cake.png' alt='')    
+    // Portfolio Item 3
+    div.col-md-6.col-lg-4
+      div.portfolio-item.mx-auto(data-toggle='modal' data-target='#portfolioModal3')
+        div.portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+          div.portfolio-item-caption-content.text-center.text-white
+            i.fas.fa-plus.fa-3x
+        img.img-fluid.rounded(src='https://blackrockdigital.github.io/startbootstrap-freelancer/img/portfolio/circus.png' alt='')    
+    // Portfolio Item 4
+    div.col-md-6.col-lg-4
+      div.portfolio-item.mx-auto(data-toggle='modal' data-target='#portfolioModal4')
+        div.portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+          div.portfolio-item-caption-content.text-center.text-white
+            i.fas.fa-plus.fa-3x
+        img.img-fluid.rounded(src='https://blackrockdigital.github.io/startbootstrap-freelancer/img/portfolio/game.png' alt='') 
+    // Portfolio Item 5
+    div.col-md-6.col-lg-4
+      div.portfolio-item.mx-auto(data-toggle='modal' data-target='#portfolioModal5')
+        div.portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+          div.portfolio-item-caption-content.text-center.text-white
+            i.fas.fa-plus.fa-3x
+        img.img-fluid.rounded(src='https://blackrockdigital.github.io/startbootstrap-freelancer/img/portfolio/safe.png' alt='')       
+  
+    // Portfolio Item 6
+    div.col-md-6.col-lg-4
+      div.portfolio-item.mx-auto(data-toggle='modal' data-target='#portfolioModal6')
+        div.portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+          div.portfolio-item-caption-content.text-center.text-white
+            i.fas.fa-plus.fa-3x
+        img.img-fluid.rounded(src='https://blackrockdigital.github.io/startbootstrap-freelancer/img/portfolio/submarine.png' alt='')    
   // About Section
   section#about.page-section.bg-primary.text-white.mb-0
     .container
@@ -205,4 +200,160 @@ block content
           p.lead.mb-0
             | Freelance is a free to use, MIT licensed Bootstrap theme created by 
             a(href='http://startbootstrap.com') Start Bootstrap
-            | .  
+            | . 
+  div#portfolioModal1.portfolio-modal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='portfolioModal1Label' style='display: none;' aria-hidden='true')
+      div.modal-dialog.modal-xl(role='document')
+        div.modal-content
+          button.close(type='button' data-dismiss='modal' aria-label='Close')
+            span(aria-hidden='true')
+              i.fas.fa-times
+          div.modal-body.text-center
+            div.container
+              div.row.justify-content-center
+                div.col-lg-8
+                  // Portfolio Modal - Title
+                  h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0 Log Cabin
+                  // Icon Divider
+                  div.divider-custom
+                    div.divider-custom-line
+                    div.divider-custom-icon
+                      i.fas.fa-star
+                    div.divider-custom-line
+                  // Portfolio Modal - Image
+                  img.img-fluid.rounded.mb-5(src='https://blackrockdigital.github.io/startbootstrap-freelancer/img/portfolio/cabin.png' alt='')
+                  // Portfolio Modal - Text
+                  p.mb-5
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+                  button.btn.btn-primary(href='#' data-dismiss='modal')
+                    i.fas.fa-times.fa-fw
+                    |                   Close Window
+  div#portfolioModal2.portfolio-modal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='portfolioModal2Label' style='display: none;' aria-hidden='true')
+      div.modal-dialog.modal-xl(role='document')
+        div.modal-content
+          button.close(type='button' data-dismiss='modal' aria-label='Close')
+            span(aria-hidden='true')
+              i.fas.fa-times
+          div.modal-body.text-center
+            div.container
+              div.row.justify-content-center
+                div.col-lg-8
+                  // Portfolio Modal - Title
+                  h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0 Cake
+                  // Icon Divider
+                  div.divider-custom
+                    div.divider-custom-line
+                    div.divider-custom-icon
+                      i.fas.fa-star
+                    div.divider-custom-line
+                  // Portfolio Modal - Image
+                  img.img-fluid.rounded.mb-5(src='https://blackrockdigital.github.io/startbootstrap-freelancer/img/portfolio/cake.png' alt='')
+                  // Portfolio Modal - Text
+                  p.mb-5
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+                  button.btn.btn-primary(href='#' data-dismiss='modal')
+                    i.fas.fa-times.fa-fw
+                    |                   Close Window
+  div#portfolioModal3.portfolio-modal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='portfolioModal3Label' style='display: none;' aria-hidden='true')
+      div.modal-dialog.modal-xl(role='document')
+        div.modal-content
+          button.close(type='button' data-dismiss='modal' aria-label='Close')
+            span(aria-hidden='true')
+              i.fas.fa-times
+          div.modal-body.text-center
+            div.container
+              div.row.justify-content-center
+                div.col-lg-8
+                  // Portfolio Modal - Title
+                  h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0 Circus
+                  // Icon Divider
+                  div.divider-custom
+                    div.divider-custom-line
+                    div.divider-custom-icon
+                      i.fas.fa-star
+                    div.divider-custom-line
+                  // Portfolio Modal - Image
+                  img.img-fluid.rounded.mb-5(src='https://blackrockdigital.github.io/startbootstrap-freelancer/img/portfolio/circus.png' alt='')
+                  // Portfolio Modal - Text
+                  p.mb-5
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+                  button.btn.btn-primary(href='#' data-dismiss='modal')
+                    i.fas.fa-times.fa-fw
+                    |                   Close Window
+  div#portfolioModal4.portfolio-modal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='portfolioModal4Label' style='display: none;' aria-hidden='true')
+      div.modal-dialog.modal-xl(role='document')
+        div.modal-content
+          button.close(type='button' data-dismiss='modal' aria-label='Close')
+            span(aria-hidden='true')
+              i.fas.fa-times
+          div.modal-body.text-center
+            div.container
+              div.row.justify-content-center
+                div.col-lg-8
+                  // Portfolio Modal - Title
+                  h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0 Controller
+                  // Icon Divider
+                  div.divider-custom
+                    div.divider-custom-line
+                    div.divider-custom-icon
+                      i.fas.fa-star
+                    div.divider-custom-line
+                  // Portfolio Modal - Image
+                  img.img-fluid.rounded.mb-5(src='https://blackrockdigital.github.io/startbootstrap-freelancer/img/portfolio/game.png' alt='')
+                  // Portfolio Modal - Text
+                  p.mb-5
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+                  button.btn.btn-primary(href='#' data-dismiss='modal')
+                    i.fas.fa-times.fa-fw
+                    |                   Close Window
+  div#portfolioModal5.portfolio-modal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='portfolioModal5Label' style='display: none;' aria-hidden='true')
+      div.modal-dialog.modal-xl(role='document')
+        div.modal-content
+          button.close(type='button' data-dismiss='modal' aria-label='Close')
+            span(aria-hidden='true')
+              i.fas.fa-times
+          div.modal-body.text-center
+            div.container
+              div.row.justify-content-center
+                div.col-lg-8
+                  // Portfolio Modal - Title
+                  h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0 Locked Safe
+                  // Icon Divider
+                  div.divider-custom
+                    div.divider-custom-line
+                    div.divider-custom-icon
+                      i.fas.fa-star
+                    div.divider-custom-line
+                  // Portfolio Modal - Image
+                  img.img-fluid.rounded.mb-5(src='https://blackrockdigital.github.io/startbootstrap-freelancer/img/portfolio/safe.png' alt='')
+                  // Portfolio Modal - Text
+                  p.mb-5
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+                  button.btn.btn-primary(href='#' data-dismiss='modal')
+                    i.fas.fa-times.fa-fw
+                    |                   Close Window
+  div#portfolioModal6.portfolio-modal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='portfolioModal6Label' style='display: none;' aria-hidden='true')
+      div.modal-dialog.modal-xl(role='document')
+        div.modal-content
+          button.close(type='button' data-dismiss='modal' aria-label='Close')
+            span(aria-hidden='true')
+              i.fas.fa-times
+          div.modal-body.text-center
+            div.container
+              div.row.justify-content-center
+                div.col-lg-8
+                  // Portfolio Modal - Title
+                  h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0 Submarine
+                  // Icon Divider
+                  div.divider-custom
+                    div.divider-custom-line
+                    div.divider-custom-icon
+                      i.fas.fa-star
+                    div.divider-custom-line
+                  // Portfolio Modal - Image
+                  img.img-fluid.rounded.mb-5(src='https://blackrockdigital.github.io/startbootstrap-freelancer/img/portfolio/submarine.png' alt='')
+                  // Portfolio Modal - Text
+                  p.mb-5
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+                  button.btn.btn-primary(href='#' data-dismiss='modal')
+                    i.fas.fa-times.fa-fw
+                    |                   Close Window 
